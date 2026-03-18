@@ -1,3 +1,89 @@
-h1 {
-    color: rgb(0, 3, 185);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: hotpink;
+}
+
+.container {
+    width: 400px;
+    height: 260px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+#leitor-qr {
+    text-align: center;
+}
+
+#leitor-qr h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#leitor-qr p {
+    color: #444;
+    font-size: 0.9rem;
+}
+
+#qr-header {
+    margin: 20px 15px;
+}
+
+#qr-header input,
+#qr-header button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+#qr-header input {
+    border: 1px solid #777;
+    padding: 10px 15px;
+}
+
+#qr-header button {
+    background-color: rgb(12, 197, 197);
+    margin-top: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#qr-header button:hover {
+    opacity: 1;
+    background-color: rgb(0, 255, 234);
+}
+
+.container .active {
+    height: 550px;
+}
+
+#qr-code {
+    display: flex;
+    opacity: 0;
+    border: 1px solid #ccc;
+    padding: 30px 0;
+    margin: 20px 15px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.container .active #qr-code {
+    opacity: 1;
 }
